@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		101648E22812FEB7007CE88A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 101648E12812FEB7007CE88A /* SDWebImageSwiftUI */; };
+		109080B32812D3B40098FEB0 /* NyamoClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109080B22812D3B40098FEB0 /* NyamoClientApp.swift */; };
+		109080B52812D3B40098FEB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109080B42812D3B40098FEB0 /* ContentView.swift */; };
+		109080B72812D3B60098FEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109080B62812D3B60098FEB0 /* Assets.xcassets */; };
+		109080BA2812D3B60098FEB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109080B92812D3B60098FEB0 /* Preview Assets.xcassets */; };
+		109080C42812D3B60098FEB0 /* NyamoClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109080C32812D3B60098FEB0 /* NyamoClientTests.swift */; };
+		109080CE2812D3B60098FEB0 /* NyamoClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109080CD2812D3B60098FEB0 /* NyamoClientUITests.swift */; };
+		109080D02812D3B60098FEB0 /* NyamoClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109080CF2812D3B60098FEB0 /* NyamoClientUITestsLaunchTests.swift */; };
+		1091D4862812D49400CC9160 /* OAuthTwi in Frameworks */ = {isa = PBXBuildFile; productRef = 1091D4852812D49400CC9160 /* OAuthTwi */; };
+		1091D4892812D52F00CC9160 /* TwitterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1091D4882812D52F00CC9160 /* TwitterService.swift */; };
+		10A855A22812F50200838F01 /* TweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A855A12812F50200838F01 /* TweetView.swift */; };
+		10C8FE1F2812E041003640F1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 10C8FE1E2812E041003640F1 /* FirebaseAuth */; };
+		10C8FE222812F1A7003640F1 /* SwiftyUI in Frameworks */ = {isa = PBXBuildFile; productRef = 10C8FE212812F1A7003640F1 /* SwiftyUI */; };
+		10C8FE252812F2FB003640F1 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C8FE242812F2FB003640F1 /* TimelineView.swift */; };
+		10C8FE282812F34F003640F1 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 10C8FE272812F34F003640F1 /* Introspect */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		109080C02812D3B60098FEB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 109080A72812D3B40098FEB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 109080AE2812D3B40098FEB0;
+			remoteInfo = NyamoClient;
+		};
+		109080CA2812D3B60098FEB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 109080A72812D3B40098FEB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 109080AE2812D3B40098FEB0;
+			remoteInfo = NyamoClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		109080AF2812D3B40098FEB0 /* NyamoClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NyamoClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		109080B22812D3B40098FEB0 /* NyamoClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyamoClientApp.swift; sourceTree = "<group>"; };
+		109080B42812D3B40098FEB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		109080B62812D3B60098FEB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		109080B92812D3B60098FEB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		109080BF2812D3B60098FEB0 /* NyamoClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NyamoClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		109080C32812D3B60098FEB0 /* NyamoClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyamoClientTests.swift; sourceTree = "<group>"; };
+		109080C92812D3B60098FEB0 /* NyamoClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NyamoClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		109080CD2812D3B60098FEB0 /* NyamoClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyamoClientUITests.swift; sourceTree = "<group>"; };
+		109080CF2812D3B60098FEB0 /* NyamoClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyamoClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1091D4832812D48900CC9160 /* OAuthTwitter */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OAuthTwitter; path = ../OAuthTwitter; sourceTree = "<group>"; };
+		1091D4882812D52F00CC9160 /* TwitterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterService.swift; sourceTree = "<group>"; };
+		10A855A12812F50200838F01 /* TweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetView.swift; sourceTree = "<group>"; };
+		10C8FE202812F199003640F1 /* SwiftyUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftyUI; path = ../SwiftyUI; sourceTree = "<group>"; };
+		10C8FE242812F2FB003640F1 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		109080AC2812D3B40098FEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101648E22812FEB7007CE88A /* SDWebImageSwiftUI in Frameworks */,
+				10C8FE222812F1A7003640F1 /* SwiftyUI in Frameworks */,
+				10C8FE282812F34F003640F1 /* Introspect in Frameworks */,
+				1091D4862812D49400CC9160 /* OAuthTwi in Frameworks */,
+				10C8FE1F2812E041003640F1 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		109080BC2812D3B60098FEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		109080C62812D3B60098FEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		109080A62812D3B40098FEB0 = {
+			isa = PBXGroup;
+			children = (
+				1091D4822812D48900CC9160 /* Packages */,
+				109080B12812D3B40098FEB0 /* NyamoClient */,
+				109080C22812D3B60098FEB0 /* NyamoClientTests */,
+				109080CC2812D3B60098FEB0 /* NyamoClientUITests */,
+				109080B02812D3B40098FEB0 /* Products */,
+				1091D4842812D49400CC9160 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		109080B02812D3B40098FEB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				109080AF2812D3B40098FEB0 /* NyamoClient.app */,
+				109080BF2812D3B60098FEB0 /* NyamoClientTests.xctest */,
+				109080C92812D3B60098FEB0 /* NyamoClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		109080B12812D3B40098FEB0 /* NyamoClient */ = {
+			isa = PBXGroup;
+			children = (
+				10C8FE232812F2EA003640F1 /* View */,
+				1091D4872812D52000CC9160 /* Library */,
+				109080B22812D3B40098FEB0 /* NyamoClientApp.swift */,
+				109080B42812D3B40098FEB0 /* ContentView.swift */,
+				109080B62812D3B60098FEB0 /* Assets.xcassets */,
+				109080B82812D3B60098FEB0 /* Preview Content */,
+			);
+			path = NyamoClient;
+			sourceTree = "<group>";
+		};
+		109080B82812D3B60098FEB0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				109080B92812D3B60098FEB0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		109080C22812D3B60098FEB0 /* NyamoClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				109080C32812D3B60098FEB0 /* NyamoClientTests.swift */,
+			);
+			path = NyamoClientTests;
+			sourceTree = "<group>";
+		};
+		109080CC2812D3B60098FEB0 /* NyamoClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				109080CD2812D3B60098FEB0 /* NyamoClientUITests.swift */,
+				109080CF2812D3B60098FEB0 /* NyamoClientUITestsLaunchTests.swift */,
+			);
+			path = NyamoClientUITests;
+			sourceTree = "<group>";
+		};
+		1091D4822812D48900CC9160 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1091D4832812D48900CC9160 /* OAuthTwitter */,
+				10C8FE202812F199003640F1 /* SwiftyUI */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		1091D4842812D49400CC9160 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1091D4872812D52000CC9160 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1091D4882812D52F00CC9160 /* TwitterService.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		10C8FE232812F2EA003640F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10C8FE242812F2FB003640F1 /* TimelineView.swift */,
+				10A855A12812F50200838F01 /* TweetView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		109080AE2812D3B40098FEB0 /* NyamoClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 109080D32812D3B60098FEB0 /* Build configuration list for PBXNativeTarget "NyamoClient" */;
+			buildPhases = (
+				109080AB2812D3B40098FEB0 /* Sources */,
+				109080AC2812D3B40098FEB0 /* Frameworks */,
+				109080AD2812D3B40098FEB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NyamoClient;
+			packageProductDependencies = (
+				1091D4852812D49400CC9160 /* OAuthTwi */,
+				10C8FE1E2812E041003640F1 /* FirebaseAuth */,
+				10C8FE212812F1A7003640F1 /* SwiftyUI */,
+				10C8FE272812F34F003640F1 /* Introspect */,
+				101648E12812FEB7007CE88A /* SDWebImageSwiftUI */,
+			);
+			productName = NyamoClient;
+			productReference = 109080AF2812D3B40098FEB0 /* NyamoClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		109080BE2812D3B60098FEB0 /* NyamoClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 109080D62812D3B60098FEB0 /* Build configuration list for PBXNativeTarget "NyamoClientTests" */;
+			buildPhases = (
+				109080BB2812D3B60098FEB0 /* Sources */,
+				109080BC2812D3B60098FEB0 /* Frameworks */,
+				109080BD2812D3B60098FEB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				109080C12812D3B60098FEB0 /* PBXTargetDependency */,
+			);
+			name = NyamoClientTests;
+			productName = NyamoClientTests;
+			productReference = 109080BF2812D3B60098FEB0 /* NyamoClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		109080C82812D3B60098FEB0 /* NyamoClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 109080D92812D3B60098FEB0 /* Build configuration list for PBXNativeTarget "NyamoClientUITests" */;
+			buildPhases = (
+				109080C52812D3B60098FEB0 /* Sources */,
+				109080C62812D3B60098FEB0 /* Frameworks */,
+				109080C72812D3B60098FEB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				109080CB2812D3B60098FEB0 /* PBXTargetDependency */,
+			);
+			name = NyamoClientUITests;
+			productName = NyamoClientUITests;
+			productReference = 109080C92812D3B60098FEB0 /* NyamoClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		109080A72812D3B40098FEB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					109080AE2812D3B40098FEB0 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					109080BE2812D3B60098FEB0 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 109080AE2812D3B40098FEB0;
+					};
+					109080C82812D3B60098FEB0 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 109080AE2812D3B40098FEB0;
+					};
+				};
+			};
+			buildConfigurationList = 109080AA2812D3B40098FEB0 /* Build configuration list for PBXProject "NyamoClient" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 109080A62812D3B40098FEB0;
+			packageReferences = (
+				10C8FE1D2812E041003640F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				10C8FE262812F34F003640F1 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				101648E02812FEB7007CE88A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 109080B02812D3B40098FEB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				109080AE2812D3B40098FEB0 /* NyamoClient */,
+				109080BE2812D3B60098FEB0 /* NyamoClientTests */,
+				109080C82812D3B60098FEB0 /* NyamoClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		109080AD2812D3B40098FEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				109080BA2812D3B60098FEB0 /* Preview Assets.xcassets in Resources */,
+				109080B72812D3B60098FEB0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		109080BD2812D3B60098FEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		109080C72812D3B60098FEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		109080AB2812D3B40098FEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				109080B52812D3B40098FEB0 /* ContentView.swift in Sources */,
+				109080B32812D3B40098FEB0 /* NyamoClientApp.swift in Sources */,
+				1091D4892812D52F00CC9160 /* TwitterService.swift in Sources */,
+				10A855A22812F50200838F01 /* TweetView.swift in Sources */,
+				10C8FE252812F2FB003640F1 /* TimelineView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		109080BB2812D3B60098FEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				109080C42812D3B60098FEB0 /* NyamoClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		109080C52812D3B60098FEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				109080D02812D3B60098FEB0 /* NyamoClientUITestsLaunchTests.swift in Sources */,
+				109080CE2812D3B60098FEB0 /* NyamoClientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		109080C12812D3B60098FEB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 109080AE2812D3B40098FEB0 /* NyamoClient */;
+			targetProxy = 109080C02812D3B60098FEB0 /* PBXContainerItemProxy */;
+		};
+		109080CB2812D3B60098FEB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 109080AE2812D3B40098FEB0 /* NyamoClient */;
+			targetProxy = 109080CA2812D3B60098FEB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		109080D12812D3B60098FEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		109080D22812D3B60098FEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		109080D42812D3B60098FEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NyamoClient/Preview Content\"";
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.NyamoClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		109080D52812D3B60098FEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NyamoClient/Preview Content\"";
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.NyamoClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		109080D72812D3B60098FEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.NyamoClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NyamoClient.app/NyamoClient";
+			};
+			name = Debug;
+		};
+		109080D82812D3B60098FEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.NyamoClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NyamoClient.app/NyamoClient";
+			};
+			name = Release;
+		};
+		109080DA2812D3B60098FEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.NyamoClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NyamoClient;
+			};
+			name = Debug;
+		};
+		109080DB2812D3B60098FEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.NyamoClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NyamoClient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		109080AA2812D3B40098FEB0 /* Build configuration list for PBXProject "NyamoClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				109080D12812D3B60098FEB0 /* Debug */,
+				109080D22812D3B60098FEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		109080D32812D3B60098FEB0 /* Build configuration list for PBXNativeTarget "NyamoClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				109080D42812D3B60098FEB0 /* Debug */,
+				109080D52812D3B60098FEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		109080D62812D3B60098FEB0 /* Build configuration list for PBXNativeTarget "NyamoClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				109080D72812D3B60098FEB0 /* Debug */,
+				109080D82812D3B60098FEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		109080D92812D3B60098FEB0 /* Build configuration list for PBXNativeTarget "NyamoClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				109080DA2812D3B60098FEB0 /* Debug */,
+				109080DB2812D3B60098FEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		101648E02812FEB7007CE88A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		10C8FE1D2812E041003640F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 8.9.0;
+			};
+		};
+		10C8FE262812F34F003640F1 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		101648E12812FEB7007CE88A /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 101648E02812FEB7007CE88A /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		1091D4852812D49400CC9160 /* OAuthTwi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OAuthTwi;
+		};
+		10C8FE1E2812E041003640F1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10C8FE1D2812E041003640F1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		10C8FE212812F1A7003640F1 /* SwiftyUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftyUI;
+		};
+		10C8FE272812F34F003640F1 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10C8FE262812F34F003640F1 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 109080A72812D3B40098FEB0 /* Project object */;
+}
